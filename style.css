@@ -1,0 +1,200 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+  border: solid 1px #8584a6;
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #011627;
+  padding: 24px 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.section-even {
+  background-color: #f2f2f2;
+}
+
+.section-uneven {
+  background-color: #fafafa;
+}
+
+.content-section {
+  padding: 28px 0;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo img {
+  margin-left: -50px;
+}
+
+#headline img {
+  max-width: 100%;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#menu a {
+  font-weight: 700;
+  color: #011627;
+  margin-left: 10px;
+}
+
+#menu a,
+#menu button {
+  margin-left: 10px;
+}
+
+.headline-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.default-button {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  font-family: Montserrat;
+  font-size: 16px;
+  background-color: #18efac;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: auto;
+  height: 48px;
+  font-weight: 700;
+}
+
+.action-button {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  font-family: Montserrat;
+  font-size: 16px;
+  background-color: #ffc95b;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: auto;
+  height: 48px;
+  font-weight: 700;
+}
+
+/* Browser mockup code
+ * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+ * Live example: https://updown.io
+ */
+
+.browser-mockup {
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.browser-mockup.with-tab:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -2em;
+  left: 5.5em;
+  width: 20%;
+  height: 0em;
+  border-bottom: 2em solid white;
+  border-left: 0.8em solid transparent;
+  border-right: 0.8em solid transparent;
+}
+
+.browser-mockup.with-url:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1.6em;
+  left: 5.5em;
+  width: calc(100% - 6em);
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.browser-mockup > * {
+  display: block;
+}
+
+/* Custom code for the demo */
+.browser-mockup {
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.browser-mockup textarea {
+  height: 240px;
+  resize: unset;
+  margin-bottom: 10px;
+}
+
+.step {
+  padding: 50px 0;
+}
+
+.price-box {
+  text-align: center;
+  display: inline-block;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  padding: 30px;
+}
+
+.price-box-container,
+.interested-section {
+  text-align: center;
+}
+
+.interested-box {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.interested-box h1 {
+  margin-right: 20px;
+}
