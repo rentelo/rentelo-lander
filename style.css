@@ -242,9 +242,17 @@ h2 {
   background-color: #011627;
   color: white;
   height: 150px;
+}
+
+.section-footer .container {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.section-footer .container a {
+  color: white;
 }
 
 .mini-logo {
