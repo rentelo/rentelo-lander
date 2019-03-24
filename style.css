@@ -238,6 +238,15 @@ h2 {
   margin-left: 10px;
 }
 
+.section-footer {
+  background-color: #011627;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 .mini-logo {
   width: 20px;
 }
