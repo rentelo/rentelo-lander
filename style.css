@@ -191,7 +191,7 @@ h2 {
 
 .nav-item a {
   font-weight: 700;
-  color: #011627;
+  color: #011627 !important;
 }
 
 .navbar-nav {
