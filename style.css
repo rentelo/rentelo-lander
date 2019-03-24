@@ -212,8 +212,8 @@ h2 {
 }
 
 .bullet {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #18efac;
   border-radius: 100%;
   color: white;
@@ -234,7 +234,7 @@ h2 {
 }
 
 .text-row h3 {
-  line-height: 50px;
+  line-height: 40px;
   margin-left: 10px;
 }
 
@@ -261,4 +261,20 @@ h2 {
   color: black;
   top: 92%;
   left: 27%;
+}
+
+@media only screen and (max-width: 992px) {
+  #headline {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .step-1 {
+    padding-right: 50px;
+  }
+
+  .step-2 {
+    padding-left: 50px;
+  }
 }
