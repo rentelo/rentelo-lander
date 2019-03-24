@@ -398,7 +398,7 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
             const thanksmessage = document.querySelector('.thanks-message');
             document.querySelector('.thanks-message').classList.remove('d-none');
 
-            thanksmessage.scrollIntoView();
+            setTimeout(() => thanksmessage.scrollIntoView(), 1);
             document.querySelector('.signup-form').classList.add('d-none');
           }
       });
