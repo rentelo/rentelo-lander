@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136836129-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-136836129-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-136836129-1');
-</script>
+      gtag("config", "UA-136836129-1");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -25,7 +30,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
     <div class="section-uneven">
@@ -43,20 +48,24 @@
           </div>
         </div>
         <div class="row content-section" id="headline">
-          <div class="col headline-text">
-            <h1>Chroń swoje oferty!</h1>
-            <h2>
-              Skanujemy internet, aby upewnić się, że nikt nie skopiował Twoich
-              ofert.
-            </h2>
-
-            <h2>Usługa startuje już w czerwcu 2019!</h2>
+          <div class="col-lg-6 headline-text">
+            <h1>Chroń swoje oferty przed kopiowaniem!</h1>
+            <p>
+              Kopiowanie ofert bez zgody ich właścicieli to poważny problem
+              wsród pośredników nieruchomości. <b>Rentelo</b> to narzędzie,
+              które skanuje portale ogłoszeniowe w poszukiwaniu ofert podobnych
+              do Twoich.
+            </p>
 
             <button class="default-button cta-button">
-              Rozpocznij darmowy miesiąc próbny!
+              Zapisz się na darmowy miesiąc próbny!
             </button>
+
+            <h2 class="text-center">
+              Usługa startuje już w drugiej połowie 2019!
+            </h2>
           </div>
-          <div class="col">
+          <div class="col-lg-6 d-none d-lg-block">
             <img src="./bitmap@3x.png" alt="" />
           </div>
         </div>
@@ -65,25 +74,32 @@
     <div class="section-even">
       <div class="container">
         <div class="row content-section">
-          <div class="col">
+          <div class="col-lg-12">
             <h1 id="jaktodziala">Jak to działa?</h1>
             <p>
-              W Rentelo doceniamy pasję, pracę i zaangażowanie najlepszych
-              pośredników w obrocie nieruchomościami. Wiemy jak wiele czasu i
-              pieniędzy kosztuje przygotowanie odpowiedniej jakości ofert.
+              Wiemy jak wiele czasu i pieniędzy kosztuje przygotowanie
+              odpowiedniej jakości ofert. Niestety, tworzone oferty nie są w
+              żaden sposób chronione przed kopiowaniem i publikowaniem ich przez
+              innych agentów.
+            </p>
+            <p>
+              <b>Rentelo</b> skanuje najpopularniejsze serwisy ogłoszeniowe i
+              informuje Cię o występowaniu ofert podobnych do Twocih. Dzięki
+              temu jesteśmy w stanie zapewnić Twoim ofertom wyłączność nie
+              tracąc czasu na własnoręczne przeszukiwanie wszystkich portali
             </p>
           </div>
         </div>
 
         <div class="row step">
-          <div class="col">
+          <div class="col-lg-6">
             <h2><b>1. Krok pierwszy</b></h2>
             <p>
               Wklej linki do Twoich ogłoszeń. Renelo potrafi przeszukiwać oferty
               z portali Otodom, Gratka, Morizon, Olx i Gumtree.
             </p>
           </div>
-          <div class="col">
+          <div class="col-lg-6">
             <div class="browser-mockup with-url">
               <h2><b>Sprawdź oferty</b></h2>
               <textarea readonly spellcheck="false">
@@ -97,8 +113,21 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
         </div>
 
         <div class="row step">
-          <div class="col">
-            <div class="browser-mockup with-url">
+          <div class="col-lg-6 order-lg-12">
+            <h2><b>2. Krok drugi</b></h2>
+            <p>
+              Zobacz raport i reaguj! Renetlo wyszykuje ogłoszenia, które mają
+              zdjęcia i opisy podobne do Twoich ofert.
+            </p>
+
+            <p>
+              Możesz teraz przejśc do tych ogłoszeń i skontaktować się z
+              portalem, aby usunąć skopiowane ogłoszenie i upewnić się, że Twoje
+              oferty nie pracują dla kogoś innego!
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="browser-mockup with-url order-lg-1">
               <h2><b>Raport sprawdzania ogłoszeń</b></h2>
               <p>Znaleziono podobne oferty!</p>
 
@@ -115,19 +144,6 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
               </p>
             </div>
           </div>
-          <div class="col">
-            <h2><b>2. Krok drugi</b></h2>
-            <p>
-              Zobacz raport i reaguj! Renetlo wyszykuje ogłoszenia, które mają
-              zdjęcia i opisy podobne do Twoich ofert.
-            </p>
-
-            <p>
-              Możesz później przejśc do tych ogłoszeń i podjąć odpowiednią
-              akcję, aby upewnić się, że Twoje oferty nie pracują dla kogoś
-              innego!
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -137,43 +153,54 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
         <div class="row content-section price-section">
           <div class="col">
             <h1 id="cennik">Cennik</h1>
-
             <div class="price-box-container">
-                    <div class="price-box">
-                            <h1>199,99zł/msc</h1>
-                            <p>Funkcje:</p>
-                            <hr/>
-                                <b>Pierwszy miesiąc za darmo!</b>
-                                <hr/>
-                              <p>Notyfikacje e-mail</p>
-                              <hr/>
-                              <p>Ochrona do 10 ofert równocześnie</p>
-                              <hr/>
-                              <p>
-                                Codzienne skanowanie internetu w celu znalezienia podobnych
-                                ofert
-                              </p>
-                              <hr/>
-                            </ul>
-                          </div>
+              <div class="price-box">
+                <h1>199,99zł/msc</h1>
+                <p>Funkcje:</p>
+                <hr />
+                <b>Pierwszy miesiąc za darmo!</b>
+                <hr />
+                <p>
+                  Codzienne skanowanie internetu w celu znalezienia podobnych
+                  ofert
+                </p>
+
+                <hr />
+                <p>Ochrona do 10 ofert równocześnie</p>
+                <hr />
+                <p>Notyfikacje e-mail</p>
+                <hr />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="section-even">
-            <div class="container">
-                    <div class="row content-section interested-section">
-                      <div class="col">
-                            <div class="interested-box">
-                                    <h1>Brzmi ciekawie? </h1> <button id="open-popup" class="default-button cta-button">
-                                            Rozpocznij darmowy miesiąc próbny!
-                                          </button>
-                                </div>
-                      </div>
-                    </div>
-                </div>
-        
+      <div class="container">
+        <div class="row content-section">
+          <div class="col-lg-12 interested-section">
+            <h1 class="text-center">Brzmi ciekawie?</h1>
+            <button
+              id="open-popup"
+              class="default-button cta-button d-block d-lg-none w-100"
+            >
+              Zapisz się na darmowy miesiąc próbny!
+            </button>
+
+            <button
+              id="open-popup"
+              class="default-button cta-button d-none d-lg-block"
+            >
+              Zapisz się na darmowy miesiąc próbny!
+            </button>
+
+            <h2 class="text-center">
+              Usługa startuje już w drugiej połowie 2019!
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

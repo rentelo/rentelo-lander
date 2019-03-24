@@ -33,10 +33,6 @@ h2 {
   background-color: #fafafa;
 }
 
-.content-section {
-  padding: 28px 0;
-}
-
 #logo {
   display: flex;
   justify-content: flex-start;
@@ -184,17 +180,16 @@ h2 {
   padding: 30px;
 }
 
-.price-box-container,
-.interested-section {
+.price-box-container {
   text-align: center;
 }
 
-.interested-box {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
+.price-section {
+  padding-bottom: 50px;
 }
 
-.interested-box h1 {
-  margin-right: 20px;
+.interested-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
