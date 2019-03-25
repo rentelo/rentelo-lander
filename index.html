@@ -18,7 +18,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rentelo - Chroń swoje oferty przed kopiowaniem!</title>
+    <title>Rentelo - Chroń swoje oferty nieruchomości przed kopiowaniem!</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -137,7 +137,7 @@
             <h1>Chroń swoje oferty przed kopiowaniem!</h1>
             <p>
               <b>Rentelo</b> to narzędzie, które skanuje portale ogłoszeniowe w
-              poszukiwaniu ofert podobnych do Twoich.
+              poszukiwaniu ofert nieruchomości podobnych do Twoich.
             </p>
 
             <h2>Usługa startuje już w <b>drugiej połowie 2019!</b></h2>
@@ -162,7 +162,7 @@
             <h1 id="jaktodziala" class="text-center">Jak to działa?</h1>
             <p class="text-center">
               Wiemy jak wiele czasu i pieniędzy kosztuje przygotowanie
-              odpowiedniej jakości ofert. Niestety, tworzone oferty nie są w
+              odpowiedniej jakości ofert nieruchomości. Niestety, tworzone oferty nie są w
               żaden sposób chronione przed kopiowaniem i publikowaniem ich przez
               innych agentów.
             </p>
@@ -279,6 +279,9 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
                 <hr />
                 <p>Notyfikacje e-mail</p>
                 <hr />
+                <button class="default-button cta-button" id="basic">
+                  Kup!
+                </button>
               </div>
             </div>
           </div>
@@ -299,6 +302,9 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
                 <hr />
                 <p>Notyfikacje e-mail i <b>SMS</b></p>
                 <hr />
+                <button class="default-button cta-button" id="pro">
+                  Kup!
+                </button>
               </div>
             </div>
           </div>
@@ -388,6 +394,74 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
       </div>
     </div>
 
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Dziękujemy za zainteresowanie</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="signup-form">
+              <h1 class="text-center">Brzmi ciekawie?</h1>
+
+              <p class="text-center">Zapisz się na testy wersji BETA! <br/>  Usługa startuje już w <b>drugiej połowie 2019!</p>
+  
+  
+              <div id="mc_embed_signup">
+                <form
+                  action="https://kaapa.us20.list-manage.com/subscribe/post?u=59354fc8460ac10b88bb0a375&amp;id=30f05c6804"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_blank"
+                  novalidate
+                >
+                  <div id="mc_embed_signup_scroll">
+                    <input
+                      type="email"
+                      value=""
+                      name="EMAIL"
+                      class="email"
+                      id="mce-EMAIL"
+                      placeholder="Adres email"
+                      required
+                    />
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div
+                      style="position: absolute; left: -5000px;"
+                      aria-hidden="true"
+                    >
+                      <input
+                        type="text"
+                        name="b_59354fc8460ac10b88bb0a375_30f05c6804"
+                        tabindex="-1"
+                        value=""
+                      />
+                    </div>
+                    <div class="clear">
+                      <input
+                        type="submit"
+                        value="Zapisz się"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="button"
+                        style="margin-top: 10px"
+                      />
+                    </div>
+                  </div>
+                </form>
+      
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.addEventListener('DOMContentLoaded', ( ) => {
           if(window.location.search.split('?')[1] === "state=thankyou") {
@@ -397,6 +471,17 @@ https://www.morizon.pl/oferta/nowoczesny-dom-mzn9999999</textarea
             setTimeout(() => thanksmessage.scrollIntoView(), 1);
             document.querySelector('.signup-form').classList.add('d-none');
           }
+
+          document.querySelector('#basic').addEventListener('click', () => {
+            ga('send', 'event', 'purchase', 'basic')
+            $('.modal').modal('show');
+          });
+
+          document.querySelector('#pro').addEventListener('click', () => {
+            ga('send', 'event', 'purchase', 'pro')
+            $('.modal').modal('show');
+          });
+
       });
     </script>
   </body>
